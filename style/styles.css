@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#4a7438 ;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar-name, .search-bar-name img, .search-bar-name a {
+    height: 40px;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.search-bar-name img {
+    margin-right: 10px;
+}
+
+.search-bar {
+    flex-grow: 2;
+    margin-left: 20px;
+    position: relative;
+}
+
+.sign-in a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.cart a{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 20%; /* 20% of the container width */
+    background-color:#333 ;
+    height: 94vh;
+}
+
+.sidebar a {
+    padding: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    flex: 1; /* Takes the remaining width */
+    padding: 16px;
+}
