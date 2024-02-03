@@ -1,10 +1,22 @@
+html {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.container {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color:#4a7438 ;
+    background-color: #ffdf5b;
     color: white;
     padding: 15px;
     display: flex;
@@ -12,12 +24,14 @@ header {
     align-items: center;
 }
 
-.search-bar-name, .search-bar-name img, .search-bar-name a {
-    height: 40px;
+.search-bar-name,
+.search-bar-name img,
+.search-bar-name a {
+    height: 46px;
     vertical-align: middle;
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .search-bar-name img {
@@ -30,21 +44,24 @@ header {
     position: relative;
 }
 
-.sign-in a{
+.sign-in a {
+    font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
-    color: white;
+    color: black;
 }
 
-.cart a{
+.cart a {
+    font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
-    color: white;
+    color: black;
 }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    padding-left: 10px;
     border: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -54,13 +71,13 @@ input {
     display: flex;
 }
 
-.sidebar {
-    flex: 0 0 20%; /* 20% of the container width */
-    background-color:#333 ;
-    height: 94vh;
+.flex-sidebar {
+    flex: 0 0 20%;
+    /* 20% of the container width */
+    background-color: #333;
 }
 
-.sidebar a {
+.flex-sidebar a {
     padding: 40px;
     text-decoration: none;
     font-size: 18px;
@@ -68,12 +85,34 @@ input {
     display: block;
 }
 
-.sidebar a:hover {
+.flex-sidebar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-.content {
-    flex: 1; /* Takes the remaining width */
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    
+    flex: 1;
+    /* Takes the remaining width */
     padding: 16px;
+}
+
+.flex-content img {
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    height: 200px
+}
+
+.flex-footer {
+    background-color: #ffdf5b;
+    color: black;
+    padding: 1em;
+    text-align: right;
+    font-size: 25px;
 }
