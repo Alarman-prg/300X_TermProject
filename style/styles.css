@@ -73,7 +73,6 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* Takes the remaining width */
     padding: 16px;
 }
 
