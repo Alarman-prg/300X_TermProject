@@ -9,21 +9,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="search-bar-name">
-            <a href="#"><img src="images/dog.png">The Good Dog</a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="sign-in">
-            <a href="#">Sign in</a>
-        </div>
-        <div class="cart">
-            <a href="#">Cart</a>
-        </div>
+    <header class="flex-header">
+        <a href="#"><img src="images/dog.png"></a>
+        <a id="header-title" href="#">The Good Dog</a>
+        <input type="text" placeholder="Search...">
+        <a href="#">Sign in</a>
+        <a href="#">Cart</a>
     </header>
-
 
     <div class="container">
         <div class="flex-sidebar">
@@ -36,10 +28,11 @@
         </div>
 
         <div class="flex-content">
-            <!-- Main content goes here -->
-            <img src="images/banner.png">
+            <div class="flex-content-banner">
+                <img src="images/banner.png">
+            </div>
             <div class="main-content">
-                <h1>Welcome to The Good Dog</h1>
+                <h1>Welcome to <em>The Good Dog</em></h1>
                 <p>This is the main content.</p>
             </div>
         </div>
