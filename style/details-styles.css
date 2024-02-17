@@ -45,6 +45,8 @@ body {
     flex-flow: column nowrap;
     width: auto;
     height: auto;
+    margin: 20px;
+    padding: 20px;
 }
 
 .img-container {
@@ -52,6 +54,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 .img-container img {
@@ -69,15 +72,33 @@ body {
 }
 
 .under-img-container {
-    height: 400px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 300px;
+    border: 1px solid black;
 }
 
 .item-price-container {
-
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-width: 25%;
 }
 
 .desc-container {
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-width: 25%;
+    border-left: 1px solid black;
+}
 
+.item-price-container h1,
+.desc-container h1 {
+    font-size: 40px;
+    font-weight: 700;
 }
 
 /* FOOTER */
