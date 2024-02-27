@@ -38,11 +38,12 @@ ul.sidenav li#li-header {
     border-top: 5px solid black;
 }
 
-div.content {
+div.content#top {
     margin-left: 25%;
-    padding: 1px 16px;
-    height: 100em;
+    padding: 5px 50px;
+    text-align: center;
 }
+
 
 @media screen and (max-width: 900px) {
     ul.sidenav {
@@ -66,4 +67,21 @@ div.content {
         text-align: center;
         float: none;
     }
+}
+
+
+div.content#bottom {
+    display: flex;
+    justify-content: end;
+    margin-left: 25%;
+    padding: 20px 50px;
+}
+
+div.content#bottom form {
+    text-align: center;
+    background-color: lightgray;
+}
+
+div.content#bottom div.item {
+    padding: 10px;
 }
