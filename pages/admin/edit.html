@@ -4,28 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin page</title>
+    <title>Admin page : Edit</title>
 
     <link rel="stylesheet" href="../../assets/style/admin.css">
 
 <body>
-
     <ul class="sidenav">
         <li><a class="active" href="../home.html">Return to landing</a></li>
+        <li><a class="active" href="admin.html">Return to Admin Page</a></li>
+        <li id="li-header">Admin Tool Links</li>
         <li><a href="upload.html">Upload</a></li>
         <li><a href="edit.html">Edit</a></li>
     </ul>
 
     <div class="content">
-        <h2>Responsive Sidenav Example</h2>
-        <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px
-            or less.</p>
-        <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center
-            the navigation links.</p>
-        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-        <h3>Resize the browser window to see the effect.</h3>
-    </div>
+        <h2>Product Edit/Creation Admin Tool Page</h2>
+        <pre>
+        A product edit page is needed to allow users to modify details of a product. All the fields (except the product id)
+        should be editable on this page. Product image should just be a field, we will assume that the image is already
+        on the server. This page should also allow for users to select the product they want to edit from a list of all
+        products that they can filter by searching for a specific product or category. The page should also allow them to
+        add a new product that does not exist. A product should have the following attributes, in addition to other
+        attributes unique to your product:
+            • Product id (not editable)
+            • Name
+            • Description
+            • Category id (or name)
+            • Image path
+            • Price
+        </pre>
 
+        <div class="edit-form">
+
+        </div>
+    </div>
 </body>
 
 </html>

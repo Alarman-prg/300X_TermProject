@@ -6,7 +6,7 @@ ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 20%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -30,10 +30,18 @@ ul.sidenav li a:hover:not(.active) {
     color: white;
 }
 
+ul.sidenav li#li-header {
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+}
+
 div.content {
     margin-left: 25%;
     padding: 1px 16px;
-    height: 1000px;
+    height: 100em;
 }
 
 @media screen and (max-width: 900px) {
