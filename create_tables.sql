@@ -1,0 +1,42 @@
+CREATE TABLE IF NOT EXISTS users (
+    uuid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    created TEXT NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    user_is_admin INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+    uuid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    display_order INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS carts (
+    uuid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    status TEXT NOT NULL,
+    created TEXT NOT NULL,
+    owner_id INTEGER NOT NULL,
+    FOREIGN KEY(owner_id) REFERENCES users(uuid) 
+);
+
+CREATE TABLE IF NOT EXISTS products (
+    uuid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE,
+    desc TEXT NOT NULL,
+    img_url TEXT NOT NULL,
+    category_id INTEGER NOT NULL,
+    is_featured INTEGER DEFAULT 0,
+    FOREIGN KEY(category_id) REFERENCES categories(uuid)
+    
+);
+
+CREATE TABLE IF NOT EXISTS cartProducts (
+    uuid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    cart_id INTEGER NOT NULL,
+    product_id INTEGER NOT NULL,
+    qty INTEGER NOT NULL,
+    FOREIGN KEY(cart_id) REFERENCES cart(uuid),
+    FOREIGN KEY(product_id) REFERENCES products(uuid)
+);
