@@ -9,11 +9,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-container {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 .flex-header {
     padding: 5px 10px 5px 10px;
     background-color: #ffdf5b;
@@ -89,6 +84,7 @@ container {
     flex-direction: column;
     flex: 1;
     padding: 16px;
+    min-height: 40em;
 }
 
 .flex-content-banner {
